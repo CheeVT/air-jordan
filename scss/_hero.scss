@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+
+.hero {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  padding: 5em 0 15em 0;
+  background: #9d0208;
+  height: 100vh;
+
+  @supports (background-blend-mode: multiply) {
+    background: url(images/bckg.png),
+      radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color:rgba(0, 0, 0, 0.6);
+  }
+
+  &__icon {
+    max-height: 200px;
+  }
+  &__title {
+    font-size: 36px;
+    font-family: 'Lexend Peta', sans-serif;
+  }
+
+  &__btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    border: 1px solid #ed1d24;
+    padding: 10px;
+    color: #ed1d24;
+    transition:
+    transform 250ms ease-in-out,
+    opacity 250ms linear;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      opacity: .9;
+    }
+  }
+}

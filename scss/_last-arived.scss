@@ -1,0 +1,43 @@
+
+.last-arived {
+  background-color: #faa307;
+  padding: 3em;
+
+  &__title {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__items {
+    // max-width: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 200px;
+
+    &-title {
+      text-align: center;
+    }
+
+    &-image {
+      max-width: 200px;
+      opacity: 0.9;
+      transition:
+        transform 250ms ease-in-out,
+        opacity 250ms linear;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        opacity: 1;
+      }
+    }
+
+    
+  }
+  
+}
