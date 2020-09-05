@@ -1,0 +1,48 @@
+.fresh-new {
+  height: 700px;
+  background-color: #dc2f02;
+  padding: 3em;
+
+  @supports (background-blend-mode: multiply) {
+    background: url(images/bckg.png),
+      radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color:rgba(0, 0, 0, 0.6);
+  }
+
+  &__title {
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 0 0 .2em rgba(0, 0, 0, 0.6);
+  }
+
+  
+
+  &__item {    
+    z-index: 1;
+
+    &-image {
+      position: absolute;
+      top: 3rem;
+      right: 0;
+    }   
+
+    &-name {
+      position: relative;
+      color: #faa307;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+
+    &-desc {
+      position: relative;
+      color: #fff;
+      font-size: 16px;
+      z-index: 2;
+    }
+  }
+  
+}
